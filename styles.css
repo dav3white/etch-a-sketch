@@ -17,10 +17,6 @@
     margin: auto;
 }
 
-.cell:hover {
-    background-color: blue;
-}
-
 html, body {
     height: 100%;
 }
