@@ -1,1 +1,36 @@
 /* Styles go here */
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cornflowerblue;
+    height: 960px;
+    width: 960px;
+}
+
+.cell {
+    background-color: rgb(235, 245, 245);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: calc(12.5% - 2px);
+    width: calc(12.5% - 2px);
+    margin: auto;
+}
+
+.cell:hover {
+    background-color: blue;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
