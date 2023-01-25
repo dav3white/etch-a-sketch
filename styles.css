@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     background-color: cornflowerblue;
-    height: 960px;
-    width: 960px;
+    height: 480px;
+    width: 480px;
 }
 
 .cell {

@@ -5,9 +5,8 @@ function setSquares() {
     removeChildElements();
     var numsquares = Math.pow(window.prompt("Enter number of squares on each side (<100)"), 2);
     const grid = document.querySelector('#grid');
-    console.log('numsquares: ' + numsquares);
-    const cellsize = (960*1/Math.sqrt(numsquares))-2;
-    console.log('Cell Size: ' + cellsize);
+    gridsize = grid.offsetHeight;
+    const cellsize = (gridsize*1/Math.sqrt(numsquares))-2;
     for (i=1; i<=numsquares; i++) {
         const cell = document.createElement('div');
         cell.id = i;
