@@ -12,8 +12,6 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    height: calc(12.5% - 2px);
-    width: calc(12.5% - 2px);
     margin: auto;
 }
 
@@ -29,4 +27,5 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
