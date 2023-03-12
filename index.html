@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Project Etch-A-Sketch Assignment</title>
+    <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <button id="squares">Squares</button>
-    <div id="grid">
+<div id="wrapper">
+  <div id="header">
+    <h1>Etch a Sketch</h1>
+  </div>
+
+  <div id="content">
+    <div id="left-pane">
+      <p>Left Pane</p>
+      <button id="clear">Clear Grid</button>
+      <input type="range" min="1" max="50" value="10" class="slider" id="sideLength" oninput="buildGrid();">
     </div>
-    <script src="javascript.js"></script>
+    <div id="main">
+      <div id="grid">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="javascript.js"></script>
 </body>
 </html>
