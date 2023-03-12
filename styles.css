@@ -1,10 +1,11 @@
 /* Styles go here */
+
 #grid {
     display: flex;
     flex-wrap: wrap;
-    background-color: cornflowerblue;
-    height: 480px;
-    width: 480px;
+    background-color: black;
+    height: 400px;
+    width: 400px;
 }
 
 .cell {
@@ -15,17 +16,53 @@
     margin: auto;
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
 body {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    margin: 0;
 }
+
+#header {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    color: yellow;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-pane {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    color: red;
+    width: 25%;
+    align-items: center;
+    gap: 20px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
