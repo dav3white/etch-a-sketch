@@ -1,10 +1,11 @@
-const button = document.getElementById('squares').addEventListener('click', buildGrid);
+const button = document.getElementById('clear').addEventListener('click', buildGrid);
+const gridSize = 400;
 
 function buildGrid() {
+    var slider = document.getElementById("sideLength");
+    var sideLength = Math.pow(slider.value, 2); // Side length in squares
     resetGrid();
-    var sideLength = Math.pow(window.prompt("Enter number of squares on each side (<100)"), 2);
     const grid = document.querySelector('#grid');
-    gridSize = 600;
     grid.setAttribute("style", `width:${gridSize}px;height:${gridSize}px`);
     const cellSize = (gridSize/Math.sqrt(sideLength))-2;
     for (i=1; i<=sideLength; i++) {
@@ -29,3 +30,4 @@ function resetGrid() {
      elementToRemove = grid.lastChild;
      }
 }
+
